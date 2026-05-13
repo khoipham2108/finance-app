@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.financeapp.presentation.dashboard.DashboardFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_dashboard_to_addTransaction"
+            app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_history"
+            app:destination="@id/historyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.financeapp.presentation.history.TransactionHistoryFragment"
+        android:label="History" />
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.financeapp.presentation.addtransaction.AddTransactionFragment"
+        android:label="Add Transaction" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.financeapp.presentation.statistics.StatisticsFragment"
+        android:label="Statistics" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.financeapp.presentation.chat.ChatFragment"
+        android:label="AI Chat" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.financeapp.presentation.profile.ProfileFragment"
+        android:label="Profile" />
+</navigation>

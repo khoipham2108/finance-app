@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FinanceApp</string>
+    <!-- Replace with your Web Client ID from google-services.json -->
+    <string name="default_web_client_id">540577232647-2hgaja9qn0jhqu6nva8mm77hg5sqma7b.apps.googleusercontent.com</string>
 </resources>

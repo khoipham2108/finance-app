@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- User bubble (right) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="48dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/primary">
+
+        <TextView
+            android:id="@+id/tvUserMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_on_primary"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:maxWidth="260dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bot bubble (left) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="48dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/surface"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/tvBotMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:maxWidth="260dp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
